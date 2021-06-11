@@ -75,13 +75,13 @@ import java.util.Scanner;
 
 			if (contador != 8) {
 
-				System.out.println("Lo encontre");
+				System.out.println("Se encontro el numero ingresado");
 				
 			}
 
 				else{
 
-					System.out.println("No lo encontre");	
+					System.out.println("No se encontro el numero ingresado" );	
 				}
 
 
