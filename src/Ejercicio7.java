@@ -29,6 +29,7 @@ public class Ejercicio7 {
 
     crearMatriz();
     mostrarMatriz();
+    sumaFilaPar();
      
 
    }
@@ -71,8 +72,37 @@ public class Ejercicio7 {
          
       }
 
+      
 
+      
          
+         
+      }
+
+      public void sumaFilaPar(){
+
+        int sumaFilas = 0;
+
+        for (int i =0; i<4;i++ ) {
+
+         //numero de columnas
+         for (int j=0; j<3 ; j++) {
+
+          if ((i%2)==0) {
+
+            sumaFilas += matriz[i][j];
+            
+          }
+
+
+             
+
+            
+         }
+         System.out.println("");
+         
+      }
+System.out.println("suma de las filas impares es: "+sumaFilas);
       }
 
         
