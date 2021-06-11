@@ -21,11 +21,12 @@ public class Ejercicio9 {
    public Ejercicio9() {
 
     tamanioMatriz();
-    //crearMatriz();
+    crearMatriz();
    mostrarMatriz();
    tamanioMatriz2();
-    //crearMatriz();
+    crearMatriz2();
    mostrarMatriz2();
+  compararDimensionesYSumar();
 
 
 
@@ -33,11 +34,11 @@ public class Ejercicio9 {
 
    public void tamanioMatriz(){
 
-    System.out.println("Ingrese el numero de columnas: ");
+    System.out.println("\nIngrese el numero de columnas de la matriz 1: ");
     tamanioColumas = scanner.nextInt();
 
 
-    System.out.println("Ingrese el numero de filas: ");
+    System.out.println("\nIngrese el numero de filas de la matriz 1: ");
     tamanioFilas = scanner.nextInt();
 
     matriz = new int[tamanioFilas][tamanioColumas];
@@ -45,18 +46,26 @@ public class Ejercicio9 {
 
    }
 
-  /*public void crearMatriz(){
+  public void crearMatriz(){
 
 
-         for (int i =0; i<tamañoFilas;i++ ) {
+         for (int i =0; i<tamanioFilas;i++ ) {
 
          //numero de columnas
-         for (int j=0; j<tamañoColumas ; j++) {
+         for (int j=0; j<tamanioColumas ; j++) {
+
+
+          System.out.println("\nIngrese los numeros de la matriz 1: ");
+          int numerosMatriz1 = scanner.nextInt();
+
+          matriz[i][j]=numerosMatriz1;
 
          }
          System.out.println("");
 
-         } */
+         } 
+         }
+
 
 public void mostrarMatriz(){
       //numero de filas
@@ -75,17 +84,37 @@ public void mostrarMatriz(){
 
     public void tamanioMatriz2(){
 
-    System.out.println("Ingrese el numero de columnas: ");
+    System.out.println("\nIngrese el numero de columnas de la matriz 2: ");
     tamanioColumas2 = scanner.nextInt();
 
 
-    System.out.println("Ingrese el numero de filas: ");
+    System.out.println("\nIngrese el numero de filas de la matriz 2: ");
     tamanioFilas2 = scanner.nextInt();
 
     matriz2 = new int[tamanioFilas2][tamanioColumas2];
 
 
    }
+
+   public void crearMatriz2(){
+
+
+         for (int i =0; i<tamanioFilas2;i++ ) {
+
+         //numero de columnas
+         for (int j=0; j<tamanioColumas2; j++) {
+
+
+          System.out.println("\nIngrese los numeros de la matriz 2: ");
+          int numerosMatriz2 = scanner.nextInt();
+
+          matriz2[i][j]=numerosMatriz2;
+
+         }
+         System.out.println("");
+
+         } 
+         }
 
    public void mostrarMatriz2(){
       //numero de filas
@@ -102,9 +131,37 @@ public void mostrarMatriz(){
       }
    }
 
+   public void compararDimensionesYSumar(){
+    if ((tamanioColumas==tamanioColumas2)&&(tamanioFilas==tamanioFilas2)) {
+
+      System.out.print("\nSe pueden sumar");
+
+      int matrizResultado [][] = new int[2][2];
 
 
+     /* for (int i =0;i<tamanioFilas ;i++ ) {
+
+          for ( int j = 0 ;j< tamanioColumas ;i++ ) {
+
+            matrizResultado [i][j]= matriz[i][j]+ matriz2[i][j];
+
+            System.out.println(matrizResultado[0][0]);
+
+
+          
+          }
+      }
+
+      
+    } */
+   }
+
+    
 }
+}
+
+
+
 
     
 
